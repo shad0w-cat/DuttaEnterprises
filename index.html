@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+            integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+            crossorigin="anonymous">
+
+        <link rel="stylesheet" href="assets/css/main.css">
+        <title>Dhattarwal Enterprises</title>
+    </head>
+
+    <body>
+        <!----------  HEADER START ---------->
+        <header>
+            <div class="logo-div"></div>
+            <div class="title-div"></div>
+            <div class="nav-bar-div"></div>
+        </header>
+        <!----------  HEADER END (/) ---------->
+
+
+        <!----------  MAIN START ---------->
+        <main>
+            <section id="home"></section>
+
+            <section id="loans">
+                <div class="loans-div">
+                    <div class="heading-loans">
+                        <h1>Find Loan Products We Offers</h1>
+                        <p>We will match you with a loan program that meet your
+                            financial need.In short term liquidity, by striving
+                            to make funds available to them <span>within 24
+                                hours of application.</span> </p>
+                    </div>
+
+                    <div class="loans-grid">
+                        <div class="loan-row">
+                            <div class="icon">
+                                <i class="fa fa-home" aria-hidden="true"></i>
+                            </div>
+                            <div class="content">
+                                <h2>Home Loan</h2>
+                                <p>Lorem ipsum dolor, sit amet consectetur
+                                    adipisicing elit. Ducimus, ex?</p>
+                            </div>
+                        </div>
+
+
+                        <div class="loan-row">
+                            <div class="icon">
+
+                                <!-- personal loan -->
+                                <i class="fa fa-user" aria-hidden="true"></i>
+                            </div>
+                            <div class="content">
+                                <h2>Personal Loan</h2>
+                                <p>Lorem ipsum dolor, sit amet consectetur
+                                    adipisicing elit. Ducimus, ex?</p>
+
+                            </div>
+                        </div>
+
+                        <div class="loan-row">
+                            <div class="icon">
+                                <i class="fa fa-shield" aria-hidden="true"></i>
+                            </div>
+                            <div class="content">
+                                <h2>Security Loan</h2>
+                                <p>Lorem ipsum dolor, sit amet consectetur
+                                    adipisicing elit. Ducimus, ex?</p>
+                            </div>
+
+                        </div>
+
+                        <div class="loan-row">
+                            <div class="icon">
+                                <i class="fa fa-briefcase" aria-hidden="true"></i>
+                            </div>
+                            <div class="content">
+                                <h2>Business Loan</h2>
+                                <p>Lorem ipsum dolor, sit amet consectetur
+                                    adipisicing elit. Ducimus, ex?</p>
+                            </div>
+                        </div>
+
+
+                        <div class="loan-row">
+                            <div class="icon">
+                                <i class="fa fa-book" aria-hidden="true"></i>
+                            </div>
+                            <div class="content">
+                                <h2>Education Loan</h2>
+                                <p>Lorem ipsum dolor, sit amet consectetur
+                                    adipisicing elit. Ducimus, ex?</p>
+                            </div>
+                        </div>
+
+
+                        <div class="loan-row">
+                            <div class="icon">
+                                <i class="fa fa-building" aria-hidden="true"></i>
+                            </div>
+                            <div class="content">
+                                <h2>Property Loan</h2>
+                                <p>Lorem ipsum dolor, sit amet consectetur
+                                    adipisicing elit. Ducimus, ex?</p>
+                            </div>
+                        </div>
+
+                        <div class="loan-row">
+                            <div class="icon">
+                                <i class="fa fa-money" aria-hidden="true"></i>
+                            </div>
+                            <div class="content">
+                                <h2>Real Estate Loan</h2>
+                                <p>Lorem ipsum dolor, sit amet consectetur
+                                    adipisicing elit. Ducimus, ex?</p>
+                            </div>
+                        </div>
+
+                        <div class="loan-row">
+                            <div class="icon">
+                                <i class="fa fa-car" aria-hidden="true"></i>
+                            </div>
+                            <div class="content">
+                                <h2>Car Loan</h2>
+                                <p>Lorem ipsum dolor, sit amet consectetur
+                                    adipisicing elit. Ducimus, ex?</p>
+                            </div>
+                        </div>
+
+
+                        <!-- <i class="fa fa-car" aria-hidden="true"></i> -->
+                        <!-- Real Estate Loan -->
+                        <!-- <i class="fa fa-handshake-o" aria-hidden="true"></i> -->
+                        <!-- <i class="fa fa-money" aria-hidden="true"></i> -->
+                        <!-- <i class="fa fa-inr" aria-hidden="true"></i> -->
+                        <!-- Security loan -->
+                        <!-- <i class="fa fa-shield" aria-hidden="true"></i> -->
+                        <!-- Business Loan -->
+                        <!-- <i class="fa fa-briefcase" aria-hidden="true"></i> -->
+                        <!-- Education Loan -->
+                        <!-- <i class="fa fa-book" aria-hidden="true"></i> -->
+                        <!-- property -->
+                        <!-- <i class="fa fa-building" aria-hidden="true"></i> -->
+                    </div>
+                </section>
+                <section id="calculator">
+                    <div class="calculator-div">
+                        <div class="left">
+                            <h1>Calculate</h1>
+                            <div id="range-amount">
+                                <div class="rangeValues">
+                                    <span id="minRange">10000</span>
+                                    <span id="selectedRange">20000</span>
+                                    <span id="maxRange">100000</span>
+
+                                </div>
+                                <input type="range" class="range amount" name=""
+                                    value="20000" min="10000" max="100000"
+                                    onchange="rangeSlider1(this.value)"
+                                    onmousemove="rangeSlider1(this.value)">
+                            </div>
+                            <div id="range-period">
+                                <div class="rangeValues">
+                                    <span id="minRange">1 month</span>
+                                    <span><span id="selectedRange2">3</span>
+                                        months</span>
+                                    <span id="maxRange">12 months</span>
+
+                                </div>
+                                <input type="range" class="range period" name=""
+                                    value="3" min="1" max="12"
+                                    onchange="rangeSlider2(this.value)"
+                                    onmousemove="rangeSlider2(this.value)">
+                            </div>
+                            <div id="result">
+                                <div class="borrow">
+                                    Amount Borrowed: <span id="amt-borrow"></span>
+                                </div>
+                                <div class="pay">
+                                    Amount that you will pay: <span
+                                        id="amt-pay"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="right">
+                            <h2>Simple / Transparent / Secure</h2>
+                            <h1>Get Loan Quickly</h1>
+                            <div class="right-grid">
+                                <div class="right-row">
+                                    <div class="count">
+                                        <h1>1</h1>
+                                    </div>
+                                    <div class="data">
+                                        Lorem ipsum dolor sit amet, consectetur
+                                        adipisicing elit. Et, labore Lorem,
+                                        ipsum..
+                                    </div>
+                                </div>
+
+
+
+
+                                <div class="right-row">
+                                    <div class="count">
+                                        <h1>2</h1>
+                                    </div>
+                                    <div class="data">
+                                        Lorem ipsum dolor sit amet, consectetur
+                                        adipisicing elit. Et, labore Lorem,
+                                        ipsum..
+                                    </div>
+                                </div>
+
+
+
+                                <div class="right-row">
+                                    <div class="count">
+                                        <h1>3</h1>
+                                    </div>
+                                    <div class="data">
+                                        Lorem ipsum dolor sit amet, consectetur
+                                        adipisicing elit. Et, labore Lorem,
+                                        ipsum..
+                                    </div>
+                                </div>
+
+
+
+                                <div class="right-row">
+                                    <div class="count">
+                                        <h1>4</h1>
+                                    </div>
+                                    <div class="data">
+                                        Lorem ipsum dolor sit amet, consectetur
+                                        adipisicing elit. Et, labore Lorem,
+                                        ipsum..
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="whyUs">
+                    <div class="choose">
+                        <div class="choose-right">
+                            <div class="experience">
+                                <p>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    10 Years of experience
+                                </p>
+                            </div>
+                            <div class="image">
+                                <img src="assets/images/choose.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="choose-left">
+                            <span class="benefits"><span>Our Benefits</span></span>
+                            <h1>Why Choose Us</h1>
+                            <p>Lorem, ipsum dolor sit amet consectetur
+                                adipisicing
+                                elit. Ipsum in incidunt aliquam eligendi rem
+                                quo,
+                                ipsa quasi accusamus necessitatibus? Provident.</p>
+                            <div class="choose-grid">
+
+                                <div class="choose-row">
+                                    <div class="choose-count">
+                                        1
+                                    </div>
+                                    <div class="data">
+                                        <h3>Best in class Commitment</h3>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur
+                                            adipisicing elit. Et, labore Lorem,
+                                            ipsum..
+
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="choose-row">
+                                    <div class="choose-count">
+                                        2
+                                    </div>
+                                    <div class="data">
+                                        <h3>Best in class Transparency</h3>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur
+                                            adipisicing elit. Et, labore Lorem,
+                                            ipsum..
+
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="choose-row">
+                                    <div class="choose-count">
+                                        3
+                                    </div>
+                                    <div class="data">
+                                        <h3>Best in class profit sharing</h3>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur
+                                            adipisicing elit. Et, labore Lorem,
+                                            ipsum..
+
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="choose-row">
+                                    <div class="choose-count">
+                                        4
+                                    </div>
+                                    <div class="data">
+                                        <h3>The one in class Business Model</h3>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur
+                                            adipisicing elit. Et, labore Lorem,
+                                            ipsum..
+
+                                        </p>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </section>
+                <section id="about">
+                    <div class="about-div">
+                        
+                        <div class="heading-about">
+                            <h2>About Us</h2>
+                        </div>
+                        <div class="about-left">
+                            <div class="image">
+                                <img src="assets/images/img2.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="about-right">
+                            <div class="read-more-container">
+                                <div class="container">
+                                    <p>
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                        Nulla minus molestiae nobis voluptate unde optio, quasi
+                                        adipisci possimus quia, impedit amet vel iusto aspernatur
+                                        cum dicta recusandae et incidunt rerum. Ipsam, natus?
+
+                                        adipisci possimus quia, impedit amet vel iusto aspernatur
+                                        cum dicta recusandae et incidunt rerum. Ipsam, natus?
+                                        Repudiandae asperiores voluptatum ratione facilis quia
+                                        voluptate, doloribus, magnam dicta dolores hic libero,
+                                        cum dicta recusandae et incidunt rerum. Ipsam, natus?
+
+                                        adipisci possimus quia, impedit amet vel iusto aspernatur
+                                        cum dicta recusandae et incidunt rerum. Ipsam, natus?
+                                        Repudiandae asperiores voluptatum ratione facilis quia
+                                        voluptate, doloribus, magnam dicta dolores hic libero,
+                                        cum dicta recusandae et incidunt rerum. Ipsam, natus?
+
+                                        adipisci possimus quia, impedit amet vel iusto aspernatur
+                                        cum dicta recusandae et incidunt rerum. Ipsam, natus?
+                                        Repudiandae asperiores voluptatum ratione facilis quia
+                                        voluptate, doloribus, magnam dicta dolores hic libero,
+                                        dolore accusantium repellendus quam aut. Placeat aliquam
+                                        rerum odit voluptatibus quos in magnam sunt, sapiente qui
+                                        totam dolorem, soluta dignissimos dicta, labore ad?
+                                     
+                                        <span class="read-more-text">
+                                            Consectetur mollitia modi beatae consequatur vel atque
+                                            dolores quasi quibusdam repudiandae ad amet autem porro
+                                            temporibus sapiente, tempora sunt? Dicta harum libero, est
+                                            obcaecati corporis provident. Voluptatem sapiente quos
+                                            cumque eligendi voluptates velit reiciendis nam hic porro
+                                            reprehenderit perspiciatis eveniet corrupti obcaecati
+                                            quibusdam ab eius voluptatum, laborum totam omnis iusto
+                                            excepturi sit! Quas totam placeat eos animi temporibus sunt
+                                            recusandae voluptas voluptatum rerum veniam, commodi,
+                                            cumque eligendi voluptates velit reiciendis nam hic porro
+                                            reprehenderit perspiciatis eveniet corrupti obcaecati
+                                            quibusdam ab eius voluptatum, laborum totam omnis iusto
+                                            excepturi sit! Quas totam placeat eos animi temporibus sunt
+                                            recusandae voluptas voluptatum rerum veniam, commodi,
+                                            mollitia consequuntur corrupti harum itaque beatae
+                                            asperiores numquam provident ex alias. Atque tenetur cum
+                                            adipisci corporis asperiores distinctio hic, animi, unde
+                                            exercitationem, magnam nobis porro? Vel nihil porro ipsum
+                                            fugiat velit odit, et provident, perferendis modi aliquam
+                                            voluptate iusto animi culpa voluptas, minima vero ex iste
+                                            sequi. Quidem odio reprehenderit quae id ad libero
+                                            distinctio ab quaerat perferendis labore, eaque vel officiis
+                                            ratione molestiae veniam culpa illo.
+                                        </span>
+                    
+                                    </p>
+                                    <span class="read-more-btn">Read More..</span>
+                                </div>
+                            </div>
+                    
+                        </div>
+
+                    </div>
+                </section>
+            </main>
+            <!----------  MAIN END (/) ---------->
+
+            <!----------  FOOTER START ---------->
+            <!-- <footer>
+
+            </footer> -->
+            <!----------  HEADER END (/) ---------->
+
+        </body>
+        <script src="index.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    </html>

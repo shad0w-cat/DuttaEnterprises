@@ -1,0 +1,481 @@
+/*********************************************************************
+
+
+    -------------------------
+    --  TABLE OF CONTENTS  --
+    -------------------------
+
+    1.  Basic Styling
+    2.  Header Styling
+    3.  Main Styling
+    4.  .........TO BE ADDED.........
+    n.  Footer Styling
+
+
+
+*********************************************************************/
+
+/*  1. 
+-----    BASIC    -----
+*********************************************************************/
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Barlow", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  padding-top: 5.1%;
+}
+
+/*  2. 
+-----    HEADER    -----
+*********************************************************************/
+
+header {
+  width: 100%;
+  height: 10%;
+  background-color: #3e77bd;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+/*  3. 
+-----    MAIN    -----
+*********************************************************************/
+main {
+}
+
+#home {
+  width: 99%;
+  height: 88vh;
+}
+
+section {
+  margin: 10px auto;
+  width: 99%;
+  /* height: 98vh; */
+  min-height: 88vh;
+  border: 1px solid black;
+  /*to be removed*/
+}
+
+/* 4. 
+-----------------------Loans--------------------------
+*****************************************************************/
+.loans-div {
+  max-width: 1450px;
+  /* background-color: antiquewhite; */
+  margin: 0 auto;
+  text-align: center;
+  /* line-height: 30px; */
+}
+.heading-loans {
+  padding-bottom: 45px;
+}
+.heading-loans h1 {
+  font-size: 2rem;
+  padding: 20px 0px;
+  letter-spacing: 1px;
+}
+.heading-loans p {
+  font-size: 1rem;
+  width: 80%;
+  letter-spacing: 1px;
+  margin: 0 auto;
+  line-height: 28px;
+  text-align: center;
+}
+.heading-loans p span {
+  font-weight: bold;
+}
+
+.loans-grid {
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(265px, 1fr));
+  justify-content: center;
+  align-items: center;
+}
+.loans-grid .loan-row {
+  position: relative;
+  padding: 20px;
+  background-color: white;
+
+  text-align: left;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  z-index: 1;
+}
+
+.loans-grid .loan-row::after {
+  content: "";
+  position: absolute;
+  height: 2%;
+  background-color: #33639e;
+  width: 100%;
+  transition: 0.5s;
+  top: 0%;
+  left: 0%;
+  z-index: -1;
+}
+.loans-grid .loan-row .icon {
+  font-size: 3rem;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  transition: 0.5s;
+}
+
+.loans-grid .loan-row .content p,
+.loans-grid .loan-row .content h2 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  letter-spacing: 1px;
+  line-height: 25px;
+  transition: 0.5s;
+}
+.loans-grid .loan-row .content h2 {
+  position: relative;
+}
+.loans-grid .loan-row .content h2::before {
+  content: "";
+  position: absolute;
+  left: 0%;
+  top: 100%;
+  width: 0%;
+  height: 3px;
+  background-color: white;
+  transition: 0.5s;
+}
+
+/* Hover */
+.loans-grid .loan-row:hover::after {
+  height: 100%;
+}
+.loans-grid .loan-row:hover .content h2,
+.loans-grid .loan-row:hover .content p,
+.loans-grid .loan-row:hover .icon {
+  color: white;
+}
+
+.loans-grid .loan-row:hover .content h2::before {
+  width: 40%;
+  /* background-color: white; */
+}
+
+/*  5. 
+-----   CALCULATOR    -----
+*********************************************************************/
+.calculator-div {
+  max-width: 1450px;
+  background-color: rgb(167, 98, 8);
+  margin: 0 auto;
+  text-align: center;
+  /* line-height: 30px; */
+}
+
+.calculator-div .right {
+  float: right;
+  width: 40%;
+}
+.calculator-div .left {
+  float: left;
+  width: 50%;
+  position: relative;
+  text-align: left;
+  /* background: #33639e; */
+  padding: 50px;
+  line-height: 25px;
+  letter-spacing: 1px;
+}
+.calculator-div #range-amount,
+#range-period {
+  position: relative;
+  /* background: chartreuse; */
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+.calculator-div .rangeValues {
+  /* position:absolute; */
+  display: flex;
+  justify-content: space-between;
+}
+
+.calculator-div .left h1 {
+  text-align: center;
+  font-size: 2.4rem;
+  padding-bottom: 20px;
+  letter-spacing: 1px;
+}
+#range-period span,
+#range-amount span {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+#result {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+#result .borrow,
+#result .pay {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.range {
+  width: 100%;
+  height: 8px;
+  border-radius: 10px;
+  /* background: #ebd40d; */
+  background: #373b44; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #4286f4,
+    #373b44
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #4286f4,
+    #373b44
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  -webkit-appearance: none;
+  outline: none;
+  border: 2px;
+}
+.range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 14px;
+  height: 26px;
+  border-radius: 2px;
+  background: #0093f5;
+  cursor: pointer;
+}
+
+.calculator-div .right {
+  padding: 10px;
+  min-height: 85vh;
+  background: #373b44; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #4286f4,
+    #373b44
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #4286f4,
+    #373b44
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.calculator-div .right h2 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+
+  font-size: 0.8rem;
+}
+
+/*  n. 
+-----   WHY CHOOSE US    -----
+*********************************************************************/
+.choose {
+  max-width: 1450px;
+  /* min-height: 82vh; */
+  /* max-height: 100vh; */
+  height: auto;
+  /* background-color: antiquewhite; */
+  margin: 0 auto;
+  /* text-align: center; */
+}
+.choose-right {
+  width: 40%;
+  float: right;
+  /* background-color: burlywood; */
+  position: relative;
+}
+.choose-right .experience {
+  font-size: 1.7rem;
+  letter-spacing: 1px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  /* display: inline; */
+}
+.choose-right .experience p {
+  display: inline;
+  border-radius: 10px;
+  border-bottom: 4px solid #2959dd;
+}
+.choose-right .image {
+  position: absolute;
+  width: 100%;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+.choose-right .image img {
+  width: 70%;
+  /* height: 70%; */
+}
+.choose-left {
+  width: 60%;
+  /* background: rgb(130, 140, 151); */
+  float: left;
+  padding: 80px;
+  /* background-color: #a3e2ff; */
+}
+
+.choose-left .benefits {
+  display: block;
+  width: 180px;
+  line-height: 1px;
+  font-size: 10px;
+  background: #234d99;
+  /* top: -50px; */
+  color: #0d4488;
+  border-radius: 10px;
+  position: relative;
+}
+.choose-left .benefits span {
+  font-size: 17px;
+  background: white;
+  padding-right: 5px;
+}
+
+.choose-left h1 {
+  letter-spacing: 1px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+.choose-left p {
+  padding-top: 5px;
+  padding-bottom: 20px;
+}
+.choose-left .choose-grid {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+  justify-content: center;
+  align-items: center;
+}
+
+.choose-left .choose-grid .choose-row {
+  background: #3589f1;
+  padding: 10px;
+  padding-bottom: 0px;
+  padding-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background: radial-gradient(transparent, rgba(255, 255, 255, 0.2));
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  backdrop-filter: blur(25px);
+  letter-spacing: 1px;
+  /* min-height: 18vh; */
+}
+.choose-left .choose-row .choose-count {
+  padding-right: 17px;
+  padding-left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+}
+.choose-left .choose-row p{
+  font-size: 0.8rem;
+  line-height: 22px;
+}
+.choose-left .choose-row h3{
+  font-size: 1rem;
+}
+
+
+
+/*  n. 
+-----   ABOOUT US    -----
+*********************************************************************/
+#about
+{
+  height: auto;
+  box-sizing: border-box;
+  /* background: lightblue; */
+}
+.about-div
+{
+  max-width: 1450px;
+  margin: 0 auto;
+}
+.about-div .heading-about
+{
+  letter-spacing: 1px;
+
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 1.5rem;
+ 
+}
+.about-left
+{
+  /* width: 35%;
+  float: left; */
+  /* background-color: burlywood; */
+  /* position: relative; */
+
+}
+.about-left .image {
+  width: 35%;
+  float: left;
+  /* position: absolute; */
+  padding-bottom: 10px;
+  background: rosybrown;
+  padding-top: 10px;
+}
+.about-left .image img {
+  width: 100%;
+}
+.about-right
+{
+  width: 60%;
+  float: right;
+  padding: 50px;
+  letter-spacing: 1px;
+  background: saddlebrown;
+  line-height: 22px;
+}
+
+
+.read-more-container{
+  display: flex;
+  flex-direction: column;
+  color: black;
+
+}
+.read-more-btn{
+  color: #6a6ae4;
+
+}
+.read-more-text{
+  display: none;
+
+}
+.read-more-text--show{
+  display: inline;
+}
+
+
+
+
+/*  n. 
+-----   FOOTER    -----
+*********************************************************************/
+
+footer {
+  width: 100%;
+  height: 20vh;
+  background-color: #3589f1;
+  /* TO BE REMOVED*/
+}
