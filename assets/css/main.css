@@ -59,7 +59,7 @@ section {
   margin: 10px auto;
   width: 99%;
   /* height: 98vh; */
-  min-height: 88vh;
+  /* min-height: 88vh; */
   border: 1px solid black;
   /*to be removed*/
 }
@@ -171,9 +171,15 @@ section {
 /*  5. 
 -----   CALCULATOR    -----
 *********************************************************************/
+
+#calculator{
+  min-height: 88vh;
+  /* height: auto; */
+}
 .calculator-div {
+/* clear: both; */
   max-width: 1450px;
-  background-color: rgb(167, 98, 8);
+  /* background-color: rgb(167, 98, 8); */
   margin: 0 auto;
   text-align: center;
   /* line-height: 30px; */
@@ -284,7 +290,13 @@ section {
 /*  n. 
 -----   WHY CHOOSE US    -----
 *********************************************************************/
+#whyUs
+{
+  min-height: 88vh;
+}
 .choose {
+  display: flex;
+  justify-content: space-between;
   max-width: 1450px;
   /* min-height: 82vh; */
   /* max-height: 100vh; */
@@ -294,10 +306,11 @@ section {
   /* text-align: center; */
 }
 .choose-right {
-  width: 40%;
-  float: right;
+  
+  /* float: right; */
   /* background-color: burlywood; */
   position: relative;
+  width: 60%;
 }
 .choose-right .experience {
   font-size: 1.7rem;
@@ -318,13 +331,13 @@ section {
   padding-top: 10px;
 }
 .choose-right .image img {
-  width: 70%;
+  width: 100%;
   /* height: 70%; */
 }
 .choose-left {
-  width: 60%;
+  /* width: 60%;
+  float: left; */
   /* background: rgb(130, 140, 151); */
-  float: left;
   padding: 80px;
   /* background-color: #a3e2ff; */
 }
@@ -400,38 +413,41 @@ section {
 *********************************************************************/
 #about
 {
-  height: auto;
+  /* min-height: 90vh; */
+  /* height: 100vh; */
+  min-height: 90vh;
   box-sizing: border-box;
+  
   /* background: lightblue; */
 }
 .about-div
 {
   max-width: 1450px;
+  display: flex;
+  justify-content: space-between;
   margin: 0 auto;
+  /* min-height: 90vh; */
+  box-sizing: border-box;
 }
-.about-div .heading-about
+.heading-about
 {
   letter-spacing: 1px;
-
   padding-top: 20px;
   padding-bottom: 20px;
   font-size: 1.5rem;
+  text-align: center;
  
 }
 .about-left
 {
-  /* width: 35%;
-  float: left; */
-  /* background-color: burlywood; */
-  /* position: relative; */
+  
+
 
 }
 .about-left .image {
-  width: 35%;
-  float: left;
-  /* position: absolute; */
+
   padding-bottom: 10px;
-  background: rosybrown;
+  /* background: rosybrown; */
   padding-top: 10px;
 }
 .about-left .image img {
@@ -439,12 +455,16 @@ section {
 }
 .about-right
 {
-  width: 60%;
-  float: right;
-  padding: 50px;
+  /* width: 60%;
+  float: right; */
+  padding-left: 50px;
+  padding-right: 50px;
   letter-spacing: 1px;
-  background: saddlebrown;
+  /* background: saddlebrown; */
   line-height: 22px;
+}
+.about-right p{
+  padding-top: 8px;
 }
 
 
