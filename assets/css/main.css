@@ -46,7 +46,7 @@ body {
 header {
   width: 100%;
   height: 10%;
-  background-color: #3589f1;
+  background-color: #003399;
   position: fixed;
   top: 0;
   left: 0;
@@ -169,7 +169,7 @@ section {
   padding: 1rem;
   background-color: none;
   border-radius: 1em;
-  border: 2px solid #3589f1;
+  border: 2px solid #003399;
   font-weight: 700;
   font-size: large;
 }
@@ -177,7 +177,7 @@ section {
 .home-div button:hover {
   transition: ease-in-out 250ms;
   color: white;
-  background-color: #3589f1;
+  background-color: #003399;
   cursor: pointer;
 }
 
@@ -249,7 +249,7 @@ section {
   content: "";
   position: absolute;
   height: 2%;
-  background-color: #3589f1;
+  background-color: #003399;
   width: 100%;
   transition: 0.5s;
   top: 0%;
@@ -332,7 +332,7 @@ section {
   width: 50%;
   position: relative;
   text-align: left;
-  /* background: #3589f1; */
+  /* background: #003399; */
   padding: 50px;
   line-height: 25px;
   letter-spacing: 1px;
@@ -384,11 +384,11 @@ section {
   background: #373b44;
   /* fallback for old browsers */
   background: -webkit-linear-gradient(to right,
-      #4286f4,
+      #003399,
       #373b44);
   /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right,
-      #4286f4,
+      #003399,
       #373b44);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
@@ -402,7 +402,7 @@ section {
   width: 26px;
   height: 26px;
   border-radius: 100%;
-  background: #3589f1;
+  background: #003399;
   cursor: pointer;
 }
 
@@ -412,16 +412,16 @@ section {
   background-color: none;
   /* fallback for old browsers */
   /* border: 5px solid -webkit-linear-gradient(to right,
-      #4286f4,
+      #003399,
       #373b44); */
   /* Chrome 10-25, Safari 5.1-6 */
   /* border: 5px solid linear-gradient(to right,
-      #4286f4,
+      #003399,
       #373b44);*/
   border-radius: 20px;
   border: double 10px transparent;
   background-image: linear-gradient(white, white),
-    linear-gradient(to right, #4286f4, #373b44);
+    linear-gradient(to right, #003399, #373b44);
   background-origin: border-box;
   background-clip: content-box, border-box;
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -538,7 +538,7 @@ section {
 }
 
 .choose-left .choose-grid .choose-row {
-  background: #3589f1;
+  background: #003399;
   padding: 10px;
   padding-bottom: 0px;
   padding-top: 15px;
@@ -725,7 +725,7 @@ section {
 footer {
   width: 100%;
   height: 20vh;
-  background-color: #3589f1;
+  background-color: #003399;
   /* TO BE REMOVED*/
   position: relative;
 }
