@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+div#back{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+.inactive{
+    display: none;
+}
+div#back img{
+    margin-top: 100px;
+}
+.fa-solid{
+    color: white;
+    font-size: 30px;
+}
+.logo{
+    display: flex;
+    height: 120px;
+    flex-direction: row;
+    margin-top: 20px;
+    margin-left: 30px;
+    font-family: cursive;
+    align-items: center;
+    justify-content: center
+}
+.logo h3{
+    font-size: 40px;
+    margin-top: -10px;
+    font-family: 'Satisfy', cursive;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #000066;
+    padding-bottom: .5em;
+    border: none;
+    outline: none;
+    position: relative;
+    cursor: pointer;
+}
+.logo h3::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+    background-color: #000066;
+    transition: transform 300ms ease-in-out;  
+    transform: scaleX(0);
+}
+  
+.logo h3:hover::before,
+  h3:focus::before {
+    transform: scaleX(1);
+}
+
+.txt{
+    font-family: 'Lobster', cursive;
+    padding-left: 30px;
+    padding-top: 0px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+
+}
+.form
+{
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 40px;
+}
+.form label{
+    font-size: 25px;
+    color: #003399;
+    font-weight: bold;
+    font-family: 'Dongle', sans-serif;
+}
+.form button{
+    margin-top: 44px;
+    width: 1270px;
+    height: 39px;
+    font-weight: bold;
+    font-family: cursive;
+    background-color: #003399;
+    color: white;
+    padding: .5em 1em;
+    position: relative;
+    cursor: pointer;
+}
+.form button:hover{
+    background-color: #000066;
+    box-shadow: inset 3px 3px 4px skyblue;
+}
+
+.form .input-group-text{
+    background-color: #000066;
+    color: white;
+}
+h1{
+    color: #2171d3;
+}
+#address{
+    width: 300px;
+}
+
+/* Radio button */
+input[type="radio"]{
+    display: none;
+}
+
+label{
+    display: block;
+    cursor: pointer;
+    font-weight: 500;
+}
+label.opt{
+    margin-top: -10px;
+}
+
+label span{
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px 10px 10px;
+    border-radius: 31px;
+    transition: .25s ease;
+}
+
+label span:before{
+    content: "";
+    background-color: #fff;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 10px;
+    transition: .25s ease;
+    box-shadow:  inset 0 0 0 2px #00005c;
+}
+
+input[type="radio"]:checked + span:before{
+    box-shadow: inset 0 0 0 10px #00005c;
+}

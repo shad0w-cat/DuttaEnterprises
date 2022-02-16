@@ -1,0 +1,10 @@
+table 1 : loan
+components : id , name , email , number , enquiry
+table 2 : contact
+components : id , name , father , mother , email , number , dob , address , occupation , occupation_name , loan(type : text) , 
+             income , LOC(type : text) , amount , purchase(type : varchar)
+
+
+
+table 3 : approved-unapproved loans
+table 4 : users

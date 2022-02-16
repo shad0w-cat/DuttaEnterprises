@@ -17,17 +17,27 @@
 <body>
     <!----------  HEADER START ---------->
     <header>
-        <div onclick="document.body.scrollTop = 0;document.documentElement.scrollTop = 0;">
+        <div id="header-title" onclick="document.body.scrollTop = 0;document.documentElement.scrollTop = 0;">
             <div class="logo-div"><img src="assets/images/logo.png" alt="Logo"></div>
             <div class="title-div">DUTTA ENTERPRISES</div>
         </div>
+        <div id="hamburger"></div>
         <div class="nav-bar-div">
             <ul class="nav-bar-list">
-                <li onclick="document.body.scrollTop = 0;document.documentElement.scrollTop = 0;">Home</li>
-                <li onclick="location.href='#loans';">Loans</li>
-                <li onclick="location.href='#calculator';">Calculator</li>
-                <li onclick="location.href='#whyUs';">Why Us?</li>
-                <li onclick="location.href='#about';">About Us</li>
+                <!-- <li><a href="#home">Home</a></li> -->
+                <li id="li-loans"><a href="#">Loans <i class="fas fa-angle-down" id="arrow-down"></i></a>
+                    <ul id="loan-dropdown">
+                        <li><a href="#">Home Loan</a></li>
+                        <li><a href="#">Car Loan</a></li>
+                        <li><a href="#">Personal Loan</a></li>
+                        <li><a href="#">Business Loan</a></li>
+                        <li><a href="#">Education Loan</a></li>
+                    </ul>
+                </li>
+                <li><a href="#calculator">Calculator</a></li>
+                <li><a href="#whyUs">Why Us?</a></li>
+                <li><a href="contact.php">Contact Us</a></li>
+                <li><a href="#about">About Us</a></li>
             </ul>
         </div>
     </header>
@@ -38,17 +48,22 @@
     <main>
         <section id="home">
             <div class="home-div">
-                <img src="assets/images/imghome.jpg" />
-                <h2>Lorem ipsum</h2>
-                <br />
+                <img src="assets/images/home.jpg" />
+                <h2>Your one stop destination for loans and much more.</h2>
                 <br />
                 <p>
-                    dolor sit amet, consectetur adipiscing elit. Pellentesque id malesuada risus,
-                    ac rhoncus dui. Donec rhoncus tellus justo. Nam eu turpis tincidunt, egestas leo non, maximus metus.
-                    Etiam ut maximus orci. Nullam non congue risus. Donec porta maximus ex. Aenean nec dignissim sapien.
-                    Aliquam viverra diam non dapibus imperdiet.
+                    We at Dutta Enterprises having the expertise of 20 years in the field offer you the best
+                    <br>
+                    deal in the town with low interest rates and what not , explore the site fill up the form
+                    <br>
+                    and we'll reach out to you.
                 </p>
-
+                <ul class="timeline">
+                    <li data-step-no="1" data-steps="Explore our website"></li>
+                    <li data-step-no="2" data-steps="Fill the form"></li>
+                    <li data-step-no="3" data-steps="We'll verify the details."></li>
+                    <li data-step-no="4" data-steps="And Congrats, your loan is sanctioned."></li>
+                </ul>
                 <button onclick="location.href='#loans';">Learn More <i class="fas fa-angle-down"></i></button>
             </div>
         </section>
@@ -70,8 +85,8 @@
                         </div>
                         <div class="content">
                             <h2>Home Loan</h2>
-                            <p>Lorem ipsum dolor, sit amet consectetur
-                                adipisicing elit. Ducimus, ex?</p>
+                            <h3>from 25 lakhs</h3>
+                            <p>Starting at 6.40% p.a.</p>
                         </div>
                     </div>
 
@@ -84,8 +99,8 @@
                         </div>
                         <div class="content">
                             <h2>Personal Loan</h2>
-                            <p>Lorem ipsum dolor, sit amet consectetur
-                                adipisicing elit. Ducimus, ex?</p>
+                            <h3>from 25 lakhs</h3>
+                            <p>Starting at 10.25% p.a.</p>
 
                         </div>
                     </div>
@@ -96,8 +111,8 @@
                         </div>
                         <div class="content">
                             <h2>Security Loan</h2>
-                            <p>Lorem ipsum dolor, sit amet consectetur
-                                adipisicing elit. Ducimus, ex?</p>
+                            <h3>from 25 lakhs</h3>
+                            <p>Starting at 15% p.a.</p>
                         </div>
 
                     </div>
@@ -108,8 +123,8 @@
                         </div>
                         <div class="content">
                             <h2>Business Loan</h2>
-                            <p>Lorem ipsum dolor, sit amet consectetur
-                                adipisicing elit. Ducimus, ex?</p>
+                            <h3>from 25 lakhs</h3>
+                            <p>Starting at 15% p.a.</p>
                         </div>
                     </div>
 
@@ -120,8 +135,8 @@
                         </div>
                         <div class="content">
                             <h2>Education Loan</h2>
-                            <p>Lorem ipsum dolor, sit amet consectetur
-                                adipisicing elit. Ducimus, ex?</p>
+                            <h3>from 25 lakhs</h3>
+                            <p>interest rate 10%</p>
                         </div>
                     </div>
 
@@ -132,8 +147,8 @@
                         </div>
                         <div class="content">
                             <h2>Property Loan</h2>
-                            <p>Lorem ipsum dolor, sit amet consectetur
-                                adipisicing elit. Ducimus, ex?</p>
+                            <h3>from 25 lakhs</h3>
+                            <p>Starting at 7.25% p.a.</p>
                         </div>
                     </div>
 
@@ -143,8 +158,8 @@
                         </div>
                         <div class="content">
                             <h2>Real Estate Loan</h2>
-                            <p>Lorem ipsum dolor, sit amet consectetur
-                                adipisicing elit. Ducimus, ex?</p>
+                            <h3>from 25 lakhs</h3>
+                            <p>interest rate 10%</p>
                         </div>
                     </div>
 
@@ -154,25 +169,12 @@
                         </div>
                         <div class="content">
                             <h2>Car Loan</h2>
-                            <p>Lorem ipsum dolor, sit amet consectetur
-                                adipisicing elit. Ducimus, ex?</p>
+                            <h3>from 25 lakhs</h3>
+                            <p>interest rate 10%</p>
                         </div>
                     </div>
 
 
-                    <!-- <i class="fa fa-car" aria-hidden="true"></i> -->
-                    <!-- Real Estate Loan -->
-                    <!-- <i class="fa fa-handshake-o" aria-hidden="true"></i> -->
-                    <!-- <i class="fa fa-money" aria-hidden="true"></i> -->
-                    <!-- <i class="fa fa-inr" aria-hidden="true"></i> -->
-                    <!-- Security loan -->
-                    <!-- <i class="fa fa-shield" aria-hidden="true"></i> -->
-                    <!-- Business Loan -->
-                    <!-- <i class="fa fa-briefcase" aria-hidden="true"></i> -->
-                    <!-- Education Loan -->
-                    <!-- <i class="fa fa-book" aria-hidden="true"></i> -->
-                    <!-- property -->
-                    <!-- <i class="fa fa-building" aria-hidden="true"></i> -->
                 </div>
         </section>
 
@@ -184,48 +186,56 @@
                     <h1>Calculate</h1>
                     <div id="range-amount">
                         <div class="rangeValues">
-                            <span id="minRange">10000</span>
-                            <span id="selectedRange">20000</span>
-                            <span id="maxRange">100000</span>
+                            <span id="minRange">10,000</span>
+                            <span id="selectedRange">100000</span>
+                            <span id="maxRange">1Cr</span>
 
                         </div>
-                        <input type="range" class="range amount" name="" value="20000" min="10000" max="100000"
-                            onchange="rangeSlider1(this.value)" onmousemove="rangeSlider1(this.value)">
+                        <input type="range" class="range amount" name="" step="1000" value="100000" min="10000"
+                            max="10000000" onchange="rangeSlider1(this.value)" oninput="rangeSlider1(this.value)">
                     </div>
                     <div id="range-period">
                         <div class="rangeValues">
-                            <span id="minRange">1 month</span>
+                            <span id="minRange">1 year</span>
                             <span><span id="selectedRange2">3</span>
-                                months</span>
-                            <span id="maxRange">12 months</span>
+                                years</span>
+                            <span id="maxRange">30 years</span>
 
                         </div>
-                        <input type="range" class="range period" name="" value="3" min="1" max="12"
-                            onchange="rangeSlider2(this.value)" onmousemove="rangeSlider2(this.value)">
+                        <input type="range" class="range period" name="" value="3" min="1" max="30"
+                            onchange="rangeSlider2(this.value)" oninput="rangeSlider2(this.value)">
                     </div>
-                    <div id="range-period">
+                    <div id="range-interest">
                         <div class="rangeValues">
                             <span id="minRange">5%</span>
-                            <span><span id="selectedRange2">11</span>
+                            <span><span id="selectedRange3">11</span>
                                 %</span>
                             <span id="maxRange">20%</span>
 
                         </div>
-                        <input type="range" class="range period" name="" value="11" min="5" max="20"
-                            onchange="rangeSlider2(this.value)" onmousemove="rangeSlider2(this.value)">
+                        <input type="range" class="range interest" name="" value="11" min="5" max="20"
+                            onchange="rangeSlider3(this.value)" oninput="rangeSlider3(this.value)">
                     </div>
                     <div id="result">
                         <div class="borrow">
                             Amount Borrowed: <span id="amt-borrow"></span>
                         </div>
                         <div class="pay">
-                            Amount that you will pay: <span id="amt-pay"></span>
+                            Total Interest payable: <span id="amt-pay"></span>
+                        </div>
+                        <div class="monthly">
+                            Monthly Installments: <span id="amt-monthly"></span>
+                        </div>
+                        <div class="tpay">
+                            Total amount payable: <span id="amt-tpay"></span>
                         </div>
                     </div>
                 </div>
 
                 <div class="right">
-                    <h2>Simple / Transparent / Secure</h2>
+                    <div id="piechart_3d"></div>
+
+                    <!-- <h2>Simple / Transparent / Secure</h2>
                     <h1>Get Loan Quickly</h1>
                     <div class="right-grid">
                         <div class="right-row">
@@ -273,7 +283,7 @@
                         </div>
 
 
-                    </div>
+                    </div> -->
                 </div>
             </div>
             <div style="clear: both;"></div>
@@ -375,7 +385,10 @@
 
                     <div class="grid-row">
                         <h3>Live help</h3>
-                        <p>Get an answer on the spot.We're online 8am-7pm Mon to Fri and 9am-3pm on Sat and Sun.</p>
+                        <!-- <p>Get an answer on the spot.We're online 8am-7pm Mon to Fri and 9am-3pm on Sat and Sun.</p> -->
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.795001954255!2d77.03614261503571!3d28.605926082428297!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d053340000001%3A0x43728703a210ae01!2sDeen%20Dayal%20Upadhyaya%20College!5e0!3m2!1sen!2sin!4v1644330634041!5m2!1sen!2sin"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                     </div>
                     <div class="grid-row">
                         <h3>Call us</h3>
@@ -493,9 +506,9 @@
 
     </footer>
     <!----------  HEADER END (/) ---------->
-
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js" async></script>
+    <script src="assets/js/index.js" defer></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 </body>
-<script src="index.js"></script>
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
 </html>

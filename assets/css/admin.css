@@ -1,0 +1,240 @@
+/*********************************************************************
+
+
+    -------------------------
+    --  TABLE OF CONTENTS  --
+    -------------------------
+
+    1.  Basic Styling
+    2.  Header Styling
+    3.  Main Styling
+    4.  .........TO BE ADDED.........
+    n.  Footer Styling
+
+
+
+*********************************************************************/
+
+/*  1. 
+-----    BASIC    -----
+*********************************************************************/
+
+@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&family=Creepster&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Barlow", sans-serif;
+    box-sizing: border-box;
+    font-family: "Catamaran", sans-serif;
+    scroll-behavior: smooth;
+    /* font-family: 'Creepster', cursive; */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    /* padding-top: 7%; */
+    overflow: none;
+}
+
+/*  2. 
+-----    HEADER    -----
+*********************************************************************/
+
+header {
+    width: 100%;
+    height: 7%;
+    background-color: yellow;
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* z-index: 1000; */
+    user-select: none;
+    display: flex;
+    align-items: center;
+    padding: 0px auto;
+}
+
+header h1 {
+    display: flex;
+    flex-direction: column;
+    margin: 0px auto
+}
+
+header h1::after {
+    content: 'admin';
+    font-size: small;
+    display: flex;
+    line-height: 0;
+    position: relative;
+    /* vertical-align: baseline; */
+    top: -0.2em;
+    justify-content: end;
+}
+
+
+header #sidenav-btn-div {
+    position: relative;
+    width: 10px;
+    margin-left: 20px;
+    /* animation: navDisplayBtn 2s ease-in-out; */
+}
+
+header #sidenav-btn-div i {
+    font-size: larger;
+}
+
+header #sidenav-btn-div i:hover {
+    cursor: pointer;
+}
+
+header #logout-btn {
+    background: none;
+    border: none;
+    margin-right: 20px;
+    font-size: larger;
+}
+
+header #logout-btn:hover {
+    cursor: pointer;
+}
+
+
+@keyframes navDisplayBtn {
+    from {
+        left:0;
+    }
+
+    to {
+        left: 30%;
+    }
+}
+
+
+/*  3. 
+-----    SIDE NAV    -----
+*********************************************************************/
+
+#sidenav-div {
+    backdrop-filter: blur(3px);
+    z-index: 2;
+    width: 100vw;
+    position: fixed;
+    top: 7%;
+    left: 0;
+    background-color: blue;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    animation: navDisplay 500ms ease-in-out alternate;
+    display: none;
+}
+
+#sidenav {
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* position: fixed;
+    top: 6%;
+    left: 0px; */
+}
+
+#sidenav li {
+    list-style: none;
+    padding: 15px;
+    font-size: larger;
+}
+
+#sidenav li:hover {
+    cursor: pointer;
+    background-color: blanchedalmond;
+    color: black;
+}
+
+@keyframes navDisplay {
+    from {
+        left: -30%
+    }
+
+    to {
+        left: 0
+    }
+}
+
+
+/*  4. 
+-----    MAIN    -----
+*********************************************************************/
+main #home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 7%;
+    left: 0;
+    display: none;
+}
+
+main #home h2 span {
+    color: brown;
+}
+
+main #other {
+    padding: 1%;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 7%;
+    left: 0;
+    overflow: scroll;
+}
+main #other table {
+    width: 100%;
+    table-layout: fixed;
+    border: 2px solid black;
+    border-collapse: collapse;
+    font-size: 15px;
+    font-family: "Calibri";
+}
+
+main #other table,
+main #other td,
+main #other tr,
+main #other th {
+    border: 1px solid black;
+}
+
+main #other td {
+    padding: 10px;
+    vertical-align: middle;
+}
+
+main #other td:last-child {
+    text-align: center;
+}
+/* 
+th:nth-child(2),
+td:nth-child(2) {
+    width: 20%;
+}
+
+th:nth-child(3),
+td:nth-child(3) {
+    width: 25%;
+}
+
+th:nth-child(1),
+td:nth-child(1) {
+    width: 15%;
+    overflow: hidden;
+} */
