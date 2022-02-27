@@ -105,7 +105,7 @@ header #logout-btn:hover {
 
 @keyframes navDisplayBtn {
     from {
-        left:0;
+        left: 0;
     }
 
     to {
@@ -191,13 +191,14 @@ main #home h2 span {
 
 main #other {
     padding: 1%;
-    height: 100%;
+    height: 93%;
     width: 100%;
     position: fixed;
     top: 7%;
     left: 0;
-    overflow: scroll;
+    overflow: auto;
 }
+
 main #other table {
     width: 100%;
     table-layout: fixed;
@@ -216,12 +217,85 @@ main #other th {
 
 main #other td {
     padding: 10px;
+    height: 70px;
     vertical-align: middle;
+}
+
+main #other #enquiry {
+    table-layout: fixed;
 }
 
 main #other td:last-child {
     text-align: center;
 }
+
+main #other td div {
+    word-wrap: break-word;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    /* text-overflow:clip; */
+    /* white-space: nowrap; */
+    /* table-layout: auto; */
+}
+
+main #other #enquiry th:nth-child(1),
+main #other #enquiry td:nth-child(1) {
+    width: 4%;
+}
+
+main #other #enquiry th:nth-child(2),
+main #other #enquiry td:nth-child(2) {
+    width: 6%;
+}
+
+main #other #enquiry th:nth-child(3),
+main #other #enquiry td:nth-child(3) {
+    width: 10%;
+}
+
+main #other #enquiry th:nth-child(4),
+main #other #enquiry td:nth-child(4) {
+    width: 7%;
+}
+
+main #other #enquiry th:nth-child(5),
+main #other #enquiry td:nth-child(5) {
+    width: 30%;
+    /* word-wrap: break-word; */
+    /* overflow-y: auto;
+    overflow-x: hidden; */
+    /* text-overflow:clip; */
+    /* white-space: nowrap; */
+    /* table-layout: auto; */
+    height: 10px;
+}
+
+main #other #enquiry th:nth-child(6),
+main #other #enquiry td:nth-child(6) {
+    width: 7%;
+}
+
+main #other #enquiry th:nth-child(7),
+main #other #enquiry td:nth-child(7) {
+    width: 6%;
+}
+
+main #other #enquiry th:nth-child(8),
+main #other #enquiry td:nth-child(8) {
+    width: 7%;
+}
+
+main #other #enquiry th:nth-child(9),
+main #other #enquiry td:nth-child(9) {
+    width: 5%;
+}
+
+main #other #enquiry button {
+    padding: 0px;
+}
+
 /* 
 th:nth-child(2),
 td:nth-child(2) {

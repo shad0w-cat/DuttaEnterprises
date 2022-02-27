@@ -11,27 +11,59 @@
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png">
     <link rel="stylesheet" href="assets/css/main.css">
+    <script src="https://kit.fontawesome.com/798bbe8d31.js" crossorigin="anonymous"></script>
     <title>Dutta Enterprises</title>
 </head>
 
 <body>
     <!----------  HEADER START ---------->
     <header>
-        <div id="header-title" onclick="document.body.scrollTop = 0;document.documentElement.scrollTop = 0;">
-            <div class="logo-div"><img src="assets/images/logo.png" alt="Logo"></div>
-            <div class="title-div">DUTTA ENTERPRISES</div>
+        <!-- <div id="header-title" onclick="document.body.scrollTop=
+                0;document.documentElement.scrollTop= 0;">
+                <div class="logo-div"><img src="assets/images/logo.png"
+                        alt="Logo"></div>
+                <div class="title-div">DUTTA ENTERPRISES</div>
+            </div>
+            <div id="hamburger"></div>
+            <div class="nav-bar-div">
+                <ul class="nav-bar-list">
+
+                    <li id="li-loans"><a href="#">Loans <i class="fas
+                                fa-angle-down" id="arrow-down"></i></a>
+                        <ul id="loan-dropdown">
+                            <li><a href="#">Home Loan</a></li>
+                            <li><a href="#">Car Loan</a></li>
+                            <li><a href="#">Personal Loan</a></li>
+                            <li><a href="#">Business Loan</a></li>
+                            <li><a href="#">Education Loan</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#calculator">Calculator</a></li>
+                    <li><a href="#whyUs">Why Us?</a></li>
+                    <li><a href="contact.php">Contact Us</a></li>
+                    <li><a href="#about">About Us</a></li>
+                </ul>
+            </div> -->
+
+
+        <div class="logo-div">
+
+            <a href="#" class="logo"><img src="./assets/images/logo.png" alt=""></a>
+            <p>Dutta Enterprises</p>
         </div>
-        <div id="hamburger"></div>
-        <div class="nav-bar-div">
-            <ul class="nav-bar-list">
-                <!-- <li><a href="#home">Home</a></li> -->
-                <li id="li-loans"><a href="#">Loans <i class="fas fa-angle-down" id="arrow-down"></i></a>
-                    <ul id="loan-dropdown">
-                        <li><a href="#">Home Loan</a></li>
-                        <li><a href="#">Car Loan</a></li>
-                        <li><a href="#">Personal Loan</a></li>
-                        <li><a href="#">Business Loan</a></li>
-                        <li><a href="#">Education Loan</a></li>
+
+        <input type="checkbox" id="menu-bar">
+        <label for="menu-bar" id="hamburger"></label>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Loans <i class="fas
+                                fa-angle-down" id="arrow-down"></i> </a>
+                    <ul>
+                        <li><a href="#loans">Home Loan</a></li>
+                        <li><a href="#loans">Car Loan</a></li>
+                        <li><a href="#loans">Personal Loan</a></li>
+                        <li><a href="#loans">Buisness Loan</a></li>
+                        <li><a href="#loans">Education Loan</a></li>
                     </ul>
                 </li>
                 <li><a href="#calculator">Calculator</a></li>
@@ -39,10 +71,24 @@
                 <li><a href="contact.php">Contact Us</a></li>
                 <li><a href="#about">About Us</a></li>
             </ul>
-        </div>
+        </nav>
+
+
+
+
     </header>
     <!----------  HEADER END (/) ---------->
 
+    <!----------  VISITOR IFRAME START ---------->
+    <div id="visitor-div">
+        <div>
+            <iframe id="visitor-enquiry" src="visitor">
+
+            </iframe>
+            <i class="fa-solid fa-xmark" id="close-visitor"></i>
+        </div>
+    </div>
+    <!----------  VISITOR IFRAME END (/) ---------->
 
     <!----------  MAIN START ---------->
     <main>
@@ -50,21 +96,27 @@
             <div class="home-div">
                 <img src="assets/images/home.jpg" />
                 <h2>Your one stop destination for loans and much more.</h2>
-                <br />
+                <br>
                 <p>
-                    We at Dutta Enterprises having the expertise of 20 years in the field offer you the best
+                    We at Dutta Enterprises having the expertise of 20 years
+                    in the field offer you the best
                     <br>
-                    deal in the town with low interest rates and what not , explore the site fill up the form
+                    deal in the town with low interest rates and what not ,
+                    explore the site fill up the form
                     <br>
                     and we'll reach out to you.
                 </p>
+                <br>
                 <ul class="timeline">
                     <li data-step-no="1" data-steps="Explore our website"></li>
                     <li data-step-no="2" data-steps="Fill the form"></li>
-                    <li data-step-no="3" data-steps="We'll verify the details."></li>
-                    <li data-step-no="4" data-steps="And Congrats, your loan is sanctioned."></li>
+                    <li data-step-no="3" data-steps="We'll verify the
+                            details."></li>
+                    <li data-step-no="4" data-steps="And Congrats, your loan
+                            is sanctioned."></li>
                 </ul>
-                <button onclick="location.href='#loans';">Learn More <i class="fas fa-angle-down"></i></button>
+                <!-- <button onclick="location.href='#loans';">Learn More <i
+                            class="fas fa-angle-down"></i></button> -->
             </div>
         </section>
 
@@ -295,11 +347,7 @@
                 <div class="choose-left">
                     <span class="benefits"><span>Our Benefits</span></span>
                     <h1>Why Choose Us</h1>
-                    <p>Lorem, ipsum dolor sit amet consectetur
-                        adipisicing
-                        elit. Ipsum in incidunt aliquam eligendi rem
-                        quo,
-                        ipsa quasi accusamus necessitatibus? Provident.</p>
+
                     <div class="choose-grid">
 
                         <div class="choose-row">
@@ -308,12 +356,6 @@
                             </div>
                             <div class="data">
                                 <h3>Best in class Commitment</h3>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipisicing elit. Et, labore Lorem,
-                                    ipsum..
-
-                                </p>
                             </div>
                         </div>
                         <div class="choose-row">
@@ -322,12 +364,6 @@
                             </div>
                             <div class="data">
                                 <h3>Best in class Transparency</h3>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipisicing elit. Et, labore Lorem,
-                                    ipsum..
-
-                                </p>
                             </div>
                         </div>
                         <div class="choose-row">
@@ -336,12 +372,6 @@
                             </div>
                             <div class="data">
                                 <h3>Best in class profit sharing</h3>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipisicing elit. Et, labore Lorem,
-                                    ipsum..
-
-                                </p>
                             </div>
                         </div>
                         <div class="choose-row">
@@ -350,12 +380,6 @@
                             </div>
                             <div class="data">
                                 <h3>The one in class Business Model</h3>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipisicing elit. Et, labore Lorem,
-                                    ipsum..
-
-                                </p>
                             </div>
                         </div>
                     </div>
@@ -384,21 +408,11 @@
                 <div class="help-grid">
 
                     <div class="grid-row">
-                        <h3>Live help</h3>
-                        <!-- <p>Get an answer on the spot.We're online 8am-7pm Mon to Fri and 9am-3pm on Sat and Sun.</p> -->
+                        <!-- <h3>Live help</h3> -->
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.795001954255!2d77.03614261503571!3d28.605926082428297!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d053340000001%3A0x43728703a210ae01!2sDeen%20Dayal%20Upadhyaya%20College!5e0!3m2!1sen!2sin!4v1644330634041!5m2!1sen!2sin"
-                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                    </div>
-                    <div class="grid-row">
-                        <h3>Call us</h3>
-                        <p>anytime during business hours.</p>
-                        <p>phone-number</p>
-                        <p>phone-number</p>
-                    </div>
-                    <div class="grid-row">
-                        <h3>See our FAQs</h3>
-                        <p>See answers to questions on how to use our services</p>
+                            width="100%" height="400px" style="border:0;" alt="maps" allowfullscreen="" loading="lazy">
+                        </iframe>
                     </div>
 
 
@@ -420,51 +434,101 @@
                     <div class="read-more-container">
                         <div class="container">
                             <p>
-                                Dutta Enterprises started with a business idea in the year 2003 to help
-                                people meet their needs easy way . Financial needs is one of the most important
-                                part of any type of business . The medium of Barter system is Money . Hence
-                                in a civilized and social living can not be define without the concern of a medium
-                                and that is money. Being realised all these things in particular Dutta Enterprises
-                                started their journy with the Freelancing model of consultancy.
+                                Dutta Enterprises started with a
+                                business idea in the year 2003 to help
+                                people meet their needs easy way .
+                                Financial needs is one of the most
+                                important
+                                part of any type of business . The
+                                medium of Barter system is Money . Hence
+                                in a civilized and social living can not
+                                be define without the concern of a
+                                medium
+                                and that is money. Being realised all
+                                these things in particular Dutta
+                                Enterprises
+                                started their journy with the
+                                Freelancing model of consultancy.
 
                                 <p>
-                                    The first disbursement was made of a some of rupees 2.5 lacs as LAP loan
-                                    from The catholic syrian bank limited at Faridabad branch. Dutta Enterprises
-                                    got The first referal of a balance transfer case of a C.C.Limit From Bank Of India.
-                                    After that Dutta Enterprises decided to start consulting on taxational provision and
-                                    related accounting and financial area to the small and local business with financial
+                                    The first disbursement was made of a
+                                    some of rupees 2.5 lacs as LAP loan
+                                    from The catholic syrian bank
+                                    limited at Faridabad branch. Dutta
+                                    Enterprises
+                                    got The first referal of a balance
+                                    transfer case of a C.C.Limit From
+                                    Bank Of India.
+                                    After that Dutta Enterprises decided
+                                    to start consulting on taxational
+                                    provision and
+                                    related accounting and financial
+                                    area to the small and local business
+                                    with financial
                                     freelancing in MSME segment.
 
                                 </p>
 
                                 <span class="read-more-text">
-                                    <p>In the year 2006 Dutta Enterprises entered into another financial sector that is
-                                        insurance, incorporated with LIC of india and engaged in research about the
+                                    <p>In the year 2006 Dutta
+                                        Enterprises entered into another
+                                        financial sector that is
+                                        insurance, incorporated with LIC
+                                        of india and engaged in research
+                                        about the
                                         business
-                                        which and what role play in financial sector engaged to resolve in people's
+                                        which and what role play in
+                                        financial sector engaged to
+                                        resolve in people's
                                         monetary
                                         problem in verious aspects.</p>
-
-                                    <p> In the year 2007 the consultancy service feel the lac of Capital as well as
+                                    <p> In the year 2007 the consultancy
+                                        service feel the lac of Capital
+                                        as well as
                                         derivative
-                                        maket kowledge without which a consultancy service of financial sector cannot
+                                        maket kowledge without which a
+                                        consultancy service of financial
+                                        sector cannot
                                         claim
-                                        fulfilment itself. Dutta Enterprises Started with Capital Market Dealer Module
+                                        fulfilment itself. Dutta
+                                        Enterprises Started with Capital
+                                        Market Dealer Module
                                         with
-                                        NSE Delhi and and engaged in rserch with two broker house. The first one was
-                                        indiabulls and the second was IIFL. In the year 2010 reserch elaborate towords
-                                        commodity cash and derivative market research.</p>
+                                        NSE Delhi and and engaged in
+                                        rserch with two broker house.
+                                        The first one was
+                                        indiabulls and the second was
+                                        IIFL. In the year 2010 reserch
+                                        elaborate towords
+                                        commodity cash and derivative
+                                        market research.</p>
 
-                                    <p> In the year 2013 Dutta Enterprises became a Complete Consultancy House
-                                        with a complete solution centre of any financial need . There was nothing left
+                                    <p> In the year 2013 Dutta
+                                        Enterprises became a Complete
+                                        Consultancy House
+                                        with a complete solution centre
+                                        of any financial need . There
+                                        was nothing left
                                         to
-                                        make unhappy to it's respectable clients. But In the year 2017 Crypto Assets was
-                                        roaring through out the financial environment so it was mandatory to get into in
-                                        this segment too. So many research and gaining knoledge in this perticular field
-                                        is really tough to achieve all these success even with some new kind of
+                                        make unhappy to it's respectable
+                                        clients. But In the year 2017
+                                        Crypto Assets was
+                                        roaring through out the
+                                        financial environment so it was
+                                        mandatory to get into in
+                                        this segment too. So many
+                                        research and gaining knoledge in
+                                        this perticular field
+                                        is really tough to achieve all
+                                        these success even with some new
+                                        kind of
                                         technology
-                                        like block-chain is also under our roof of consultancy that which clearly shows
-                                        the endurance to dedication of service to our respectable clients. </p>
+                                        like block-chain is also under
+                                        our roof of consultancy that
+                                        which clearly shows
+                                        the endurance to dedication of
+                                        service to our respectable
+                                        clients. </p>
                                 </span>
 
                             </p>
@@ -490,15 +554,16 @@
             <i class="fab fa-instagram-square"></i>
             <i class="fab fa-youtube"></i>
         </div>
-        <div class="nav-bar-div">
-            <ul class="nav-bar-list">
-                <li onclick="document.body.scrollTop = 0;document.documentElement.scrollTop = 0;">Home</li>
-                <li onclick="location.href='#loans';">Loans</li>
-                <li onclick="location.href='#calculator';">Calculator</li>
-                <li onclick="location.href='#whyUs';">Why Us?</li>
-                <li onclick="location.href='#about';">About Us</li>
-            </ul>
-        </div>
+        <!-- <div class="nav-bar-div">
+                    <ul class="nav-bar-list">
+                        <li onclick="document.body.scrollTop=
+                            0;document.documentElement.scrollTop= 0;">Home</li>
+                        <li onclick="location.href='#loans';">Loans</li>
+                        <li onclick="location.href='#calculator';">Calculator</li>
+                        <li onclick="location.href='#whyUs';">Why Us?</li>
+                        <li onclick="location.href='#about';">About Us</li>
+                    </ul>
+                </div> -->
         <div class="copyright-div">
             <i class="far fa-copyright"></i>
             2022 WebDevelopers@DDUC. All Rights Reserved

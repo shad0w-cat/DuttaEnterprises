@@ -1,37 +1,43 @@
-let navitems = document.querySelector(".nav-bar-list");
-let nav = document.querySelector(".nav-bar-div");
+// let navitems = document.querySelector(".nav-bar-list");
+// let nav = document.querySelector(".nav-bar-div");
 let ham = document.querySelector("#hamburger");
 ham.addEventListener("click", () => {
     ham.classList.toggle("active");
     console.log("yes");
-    nav.classList.toggle("open");
+    // nav.classList.toggle("open");
 });
 
-let dropdown = document.getElementById("li-loans");
-let loan_dropdown = document.getElementById("loan-dropdown");
-
-function show() {
-    loan_dropdown.classList.add('show');
-
+closeVisitorBtn = document.getElementById('close-visitor');
+closeVisitorBtn.addEventListener("click", closeVisitor)
+function closeVisitor () {
+    console.log("hell");
+    document.getElementById('visitor-div').style.display='none';
 }
 
-function donotShow() {
-    loan_dropdown.classList.remove('show');
+// let dropdown = document.getElementById("li-loans");
+// let loan_dropdown = document.getElementById("loan-dropdown");
 
-}
-dropdown.addEventListener("mouseover", () => {
-    show();
-})
-loan_dropdown.addEventListener("mouseover", () => {
-    show();
-});
-loan_dropdown.addEventListener("mouseout", () => {
-    donotShow();
+// function show() {
+//     loan_dropdown.classList.add('show');
+// }
 
-});
-dropdown.addEventListener("mouseout", () => {
-    donotShow();
-});
+// function donotShow() {
+//     loan_dropdown.classList.remove('show');
+
+// }
+// dropdown.addEventListener("mouseover", () => {
+//     show();
+// })
+// loan_dropdown.addEventListener("mouseover", () => {
+//     show();
+// });
+// loan_dropdown.addEventListener("mouseout", () => {
+//     donotShow();
+
+// });
+// dropdown.addEventListener("mouseout", () => {
+//     donotShow();
+// });
 
 
 const parentContainer = document.querySelector(".read-more-container");
@@ -123,7 +129,7 @@ function drawChart() {
             fontSize: 17,
             bold: true,
             padding: 1000,
-            color: 'white'
+            color: 'gold'
         },
         tooltip: {
             text: 'value',
@@ -145,11 +151,11 @@ function drawChart() {
         },
         slices: {
             1: {
-                color: 'blue',
+                color: '#45a29e',
                 offset: 0.05
             },
             0: {
-                color: '#00aaff'
+                color: '#116466'
             }
         }
     };
