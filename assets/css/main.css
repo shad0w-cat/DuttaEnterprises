@@ -401,6 +401,10 @@ header label {
 
 }
 
+#visitor-div div iframe {
+  background-color: white;
+}
+
 #visitor-div div i {
   position: absolute;
   top: 21%;

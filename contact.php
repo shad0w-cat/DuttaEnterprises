@@ -22,16 +22,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $company = $_POST["company"];
         $loanType = $_POST["loan_taken"];
         $purchase = $_POST["purchase"];
-    }
-    else{
+    } else {
         $company = NULL;
         $loanType = NULL;
         $purchase = NULL;
     }
     $sql = "INSERT INTO `loanApplications` ( `customerName`, `fatherName`, `motherName`, `email`, `phoneNo` , `dob`, `address`, `occupation`, `occupation_name`, `loan`, `income`, `LOC`, `loanAmount`) VALUES ( '$name', '$Fname', '$Mname', '$email', '$contact' , '$dob', '$address', '$occupation', '$job', '$loan', '$income', '$LOC', '$amount')";
     $result = mysqli_query($conn, $sql);
-    if (!$result)
-    {
+    if (!$result) {
         die($conn->error);
     }
     $conn->close();
@@ -51,8 +49,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <title>Loan Application Form</title>
     <link rel="stylesheet" href="assets/css/contact.css">
     <link rel="stylesheet" href="assets/css/fontawesome-free-5.15.4-web/css/all.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 
 <body>
@@ -106,8 +103,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="col-md-4">
                 <label for="number" class="form-label">Contact number *</label>
                 <div class="input-group">
-                    <span class="input-group-text" id="inputGroupPrepend2"
-                        style="font-weight: bold; font-family: cursive;">+91</span>
+                    <span class="input-group-text" id="inputGroupPrepend2" style="font-weight: bold; font-family: cursive;">+91</span>
                     <input type="number" class="form-control" id="number" name="number" required>
                 </div>
             </div>
@@ -132,16 +128,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <label for="occupation_name" class="form-label">Occupation name *</label>
                 <div class="input-group">
                     <span class="input-group-text" id="inputGroupPrepend2"><i class="fas fa-user-tie"></i></span>
-                    <input type="text" class="form-control" id="occupation_name" name="job"
-                        aria-describedby="inputGroupPrepend2" required>
+                    <input type="text" class="form-control" id="occupation_name" name="job" aria-describedby="inputGroupPrepend2" required>
                 </div>
             </div>
             <div class="col-md-4">
                 <label for="income" class="form-label">Gross net income *</label>
                 <div class="input-group">
                     <span class="input-group-text" id="inputGroupPrepend2"><i class="fas fa-rupee-sign"></i></span>
-                    <input type="number" class="form-control" id="income" name="income"
-                        aria-describedby="inputGroupPrepend2" required>
+                    <input type="number" class="form-control" id="income" name="income" aria-describedby="inputGroupPrepend2" required>
                 </div>
             </div>
             <div class="col-md-4">
@@ -162,8 +156,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <label for="amount" class="form-label">Loan amount required *</label>
                 <div class="input-group">
                     <span class="input-group-text" id="inputGroupPrepend2"><i class="fas fa-rupee-sign"></i></span>
-                    <input type="number" class="form-control" id="amount" name="amount"
-                        aria-describedby="inputGroupPrepend2" required>
+                    <input type="number" class="form-control" id="amount" name="amount" aria-describedby="inputGroupPrepend2" required>
                 </div>
             </div>
             <div class="col-md-3" id="radio">
@@ -182,8 +175,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <label for="company" class="form-label">Company name *</label>
                 <div class="input-group">
                     <span class="input-group-text" id="inputGroupPrepend2"><i class="fas fa-building"></i></span>
-                    <input type="text" class="form-control val" id="company" name="company"
-                        aria-describedby="inputGroupPrepend2" required>
+                    <input type="text" class="form-control val" id="company" name="company" aria-describedby="inputGroupPrepend2" required>
                 </div>
             </div>
             <div class="col-md-4 inactive company">
@@ -204,11 +196,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <label for="purchase" class="form-label">Loan amount taken from that company *</label>
                 <div class="input-group">
                     <span class="input-group-text" id="inputGroupPrepend2"><i class="fas fa-rupee-sign"></i></span>
-                    <input type="number" class="form-control val" id="purchase" name="purchase"
-                        aria-describedby="inputGroupPrepend2" required>
+                    <input type="number" class="form-control val" id="purchase" name="purchase" aria-describedby="inputGroupPrepend2" required>
                 </div>
             </div>
-            <div class="col-md-3" style="width: 100%;">
+            <div class="col-md-3" style="width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;">
                 <button class="btn btn-primary" id="button" type="submit">Send for approval</button>
             </div>
             <div class="col-12">
@@ -224,8 +218,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </form>
     </div>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
 </script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script>
@@ -237,6 +230,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     yes.addEventListener('click', () => {
         for (let i = 0; i < box.length; i++) {
             box[i].classList.remove("inactive");
+        };
+        for (let i = 0; i < box2.length; i++) {
+            box2[i].removeAttribute('disabled');
         };
     });
     no.addEventListener('click', () => {

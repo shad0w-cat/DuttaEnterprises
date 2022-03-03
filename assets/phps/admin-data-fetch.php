@@ -150,11 +150,11 @@ function enquiries ()
         }
         else if ($rowData['enquiryAnswered'] == 1)
         {
-            echo '    <td> Yes </td>';
+            echo '    <td> Yes <br>By: ' . $rowData['answeredBy'] . '</td>';
         }
         else if ($rowData['enquiryAnswered'] == 2)
         {
-            echo '    <td> Ignored </td>';
+            echo '    <td> Ignored <br>By: ' . $rowData['answeredBy'] . '</td>';
         }
         echo '    <td>' . $rowData['enquiryReplyDate'] . '</td>';
         echo '    <td>

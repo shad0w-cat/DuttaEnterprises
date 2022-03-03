@@ -47,7 +47,7 @@ function dataFetch(e) {
     xhttp.onload = function () {
         document.getElementById("other").innerHTML = this.responseText;
     }
-    xhttp.open("GET", "./assets/phps/admin-data-fetch.php?func=" + e, true);
+    xhttp.open("GET", "../assets/phps/admin-data-fetch.php?func=" + e, true);
     xhttp.send();
     // }
     openCloseSideMenu();
@@ -62,7 +62,7 @@ function approve(e) {
     xhttp.onload = function () {
         alert("Approved");
     }
-    xhttp.open("GET", "./assets/phps/admin-data-fetch.php?func=approve&cid=" + e.value, true);
+    xhttp.open("GET", "../assets/phps/admin-data-fetch.php?func=approve&cid=" + e.value, true);
     xhttp.send();
 }
 
@@ -72,13 +72,13 @@ function decline(e) {
     xhttp.onload = function () {
         alert("Declined");
     }
-    xhttp.open("GET", "./assets/phps/admin-data-fetch.php?func=decline&cid=" + e.value, true);
+    xhttp.open("GET", "../assets/phps/admin-data-fetch.php?func=decline&cid=" + e.value, true);
     xhttp.send();
 }
 
 function logout() {
-    console.log('hel');
-    window.location.href = 'login/';
+    // console.log('hel');
+    window.location.href = 'logout.php';
 }
 
 function enquiry(e)
@@ -89,7 +89,7 @@ function enquiry(e)
     xhttp.onload = function () {
         alert("Answered");
     }
-    xhttp.open("GET", "./assets/phps/admin-data-fetch.php?func=enquiryAns&eid=" + e.value + "&enq=" + enq + "&email=" + email, true);
+    xhttp.open("GET", "../assets/phps/admin-data-fetch.php?func=enquiryAns&eid=" + e.value + "&enq=" + enq + "&email=" + email, true);
     xhttp.send();
     console.log(enq);
     prebuiltMailURL = "mailto:"+email+"?subject=Reply%20to%20your%20enquiry&body=--------%20Write%20before%20this%20line--------%0A%0AOriginal%20Enquiry%0A"+enq;
@@ -103,6 +103,6 @@ function ignore(e)
     xhttp.onload = function () {
         alert("Ignored");
     }
-    xhttp.open("GET", "./assets/phps/admin-data-fetch.php?func=enquiryIgn&eid=" + e.value, true);
+    xhttp.open("GET", "../assets/phps/admin-data-fetch.php?func=enquiryIgn&eid=" + e.value, true);
     xhttp.send();
 }

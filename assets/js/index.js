@@ -10,8 +10,13 @@ ham.addEventListener("click", () => {
 closeVisitorBtn = document.getElementById('close-visitor');
 closeVisitorBtn.addEventListener("click", closeVisitor)
 function closeVisitor () {
-    console.log("hell");
+    // console.log("hell");
     document.getElementById('visitor-div').style.display='none';
+}
+
+function showVisitor () {
+    // console.log("hell");
+    document.getElementById('visitor-div').style.display='initial';
 }
 
 // let dropdown = document.getElementById("li-loans");
@@ -54,9 +59,9 @@ const selectedRange = document.getElementById("selectedRange");
 const selectedRange2 = document.getElementById("selectedRange2");
 const selectedRange3 = document.getElementById("selectedRange3");
 
-var principal = 100000;
-var interest = 11;
-var time = 3;
+var principal = 100000.0;
+var interest = 11.0;
+var time = 3.0;
 var amount = 3273.87;
 document.getElementById("amt-borrow").innerText = principal;
 document.getElementById("amt-pay").innerText = Math.round((amount * time * 12) - principal);
@@ -69,28 +74,32 @@ function result() {
     amount = principal * rate * Math.pow((rate + 1), tenure) / (Math.pow((rate + 1), tenure) - 1);
     //console.log(amount);
     document.getElementById("amt-borrow").innerText = principal;
-    document.getElementById("amt-pay").innerText = Math.round(amount * tenure - principal);
-    document.getElementById("amt-monthly").innerText = Math.round(amount);
-    document.getElementById("amt-tpay").innerText = Math.round(amount * tenure);
+    document.getElementById("amt-pay").innerText = Math.round(amount * tenure - principal,2);
+    document.getElementById("amt-monthly").innerText = Math.round(amount,2);
+    document.getElementById("amt-tpay").innerText = Math.round(amount * tenure,2);
     drawChart();
 }
 
 function rangeSlider1(value) {
     selectedRange.textContent = value;
-    principal = parseInt(value);
-    //console.log(principal)
+    principal = parseFloat(value);
+    // console.log(principal)
     result()
 }
 
 function rangeSlider2(value) {
     selectedRange2.textContent = value;
-    time = parseInt(value);
+    time = parseFloat(value);
+    // console.log(time)
+
     result()
 }
 
 function rangeSlider3(value) {
     selectedRange3.textContent = value;
-    interest = parseInt(value);
+    interest = parseFloat(value);
+    // console.log(interest)
+
     result()
 }
 

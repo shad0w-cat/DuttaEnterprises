@@ -11,13 +11,17 @@
         die($connection->error);
     }
     $rows = $result->num_rows;
+    $connection->close();
     if ($rows)
     {
-        echo 'oooooo';
+        session_start();
+        $_SESSION['success']=true;
+        header("location: admin");
+        // echo "zelo";
     }
-    else {
-        echo "yeloow";
+    else { 
+        header("location: login?failed=1");
+        // echo "yelo";
     }
-    $connection->close();
 
 ?>

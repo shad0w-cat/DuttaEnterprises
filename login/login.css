@@ -117,3 +117,7 @@ body {
 #login-form-link:hover{
     background: #1056e2;
 }
+
+#login-submit {
+	border: 1px solid black;
+}

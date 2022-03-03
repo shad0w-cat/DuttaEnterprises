@@ -11,6 +11,7 @@
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png">
     <link rel="stylesheet" href="assets/css/main.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js" async defer></script>
     <script src="https://kit.fontawesome.com/798bbe8d31.js" crossorigin="anonymous"></script>
     <title>Dutta Enterprises</title>
 </head>
@@ -68,7 +69,7 @@
                 </li>
                 <li><a href="#calculator">Calculator</a></li>
                 <li><a href="#whyUs">Why Us?</a></li>
-                <li><a href="contact.php">Contact Us</a></li>
+                <li><a onclick="showVisitor()">Contact Us</a></li>
                 <li><a href="#about">About Us</a></li>
             </ul>
         </nav>
@@ -254,7 +255,7 @@
                             <span id="maxRange">30 years</span>
 
                         </div>
-                        <input type="range" class="range period" name="" value="3" min="1" max="30"
+                        <input type="range" class="range period" name="" value="3" min="1" max="30" step=".5"
                             onchange="rangeSlider2(this.value)" oninput="rangeSlider2(this.value)">
                     </div>
                     <div id="range-interest">
@@ -265,7 +266,7 @@
                             <span id="maxRange">20%</span>
 
                         </div>
-                        <input type="range" class="range interest" name="" value="11" min="5" max="20"
+                        <input type="range" class="range interest" name="" value="11" min="5" max="20" step="0.1"
                             onchange="rangeSlider3(this.value)" oninput="rangeSlider3(this.value)">
                     </div>
                     <div id="result">
@@ -571,9 +572,15 @@
 
     </footer>
     <!----------  HEADER END (/) ---------->
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js" async></script>
     <script src="assets/js/index.js" defer></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 </body>
-
+<script>
+    var div = document.getElementsByClassName('loan-row');
+    for (let i = 0; i < div.length; i++) {
+        div[i].addEventListener('click' , () => {
+            location.href = "contact.php";
+        })        
+    }
+</script>
 </html>
